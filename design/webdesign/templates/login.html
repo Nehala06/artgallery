@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+login now
+{% endblock %}
+{% block helo %}
+<section class="saving_section ">
+    <div class="box">
+<div>
+	<form action="http://127.0.0.1:8000/login/" method="post">
+		{% csrf_token %}
+		username<br>
+		<input type="text" placeholder="username" name="username">
+		<br>
+		password<br>
+		<input type="password" placeholder="passwd" name="password" >
+		<br>
+		<br>
+		<input type="submit"  name="" value="login">
+		<br>
+
+	</form>
+</div>
+	</div>
+</section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Gift items
+{% endblock %}
+{% block menu %}
+<a href="http://127.0.0.1:8000/logout/">LOGOUT</a>
+{% endblock %}
+{% block hello %}
+<section class="saving_section ">
+    <div class="box">
+<h1 class="text_centre">make an order</h1>
+<br>
+<div class="container text-centre mb-3 text-primary w=200 h=400 p-4 my-5">
+    <form action="http://127.0.0.1:8000/book/" method="POST">
+        {% csrf_token %}
+        {{ formdata.as_p }}
+       <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+</div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+  <title>
+    Welcome To Official Website of Craft Shop
+  </title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+  <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{% static 'css/css.css' %}">
+   <link rel="stylesheet" href="{% static 'css/cs.css' %}">
+   <!-- custom js file link  -->
+   <script src="{% static 'js/java.js' %}" defer></script>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <span>
+             Customised Gifts
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'shop' %}">
+                Shop
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'whyus' %}">
+                Why Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">
+                About us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contactus' %}">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+          <div class="user_option">
+            <a href="{% url 'login' %}"
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>
+                Login
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
+            <form class="form-inline ">
+              <button class="btn nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+
+    <section class="slider_section">
+      <div class="slider_container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <h1>
+                        Welcome To <br>
+                        Craft Shop
+                      </h1>
+                      <p>
+                        Customise Gifts For Your Loved Ones
+                      </p>
+                      <p>
+                        Handmade Gift Items
+                      </p>
+                      <a href="https://wa.me/+919496782074">
+                        Contact for Orders
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-5 ">
+                    <div class="img-box">
+                      <img src="{% static 'images/olivia-bollen-ayUGdxRvjV4-unsplash.jpg' %}" alt="loading" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+    <br>
+    <br>
+    <!-- end slider section -->
+  <!-- end hero area -->
+   <marquee behaviour="scroll" ; direction="left" ; scrollamount="12" >
+		<img src="{% static 'images/images (2).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/images (1).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/images (3).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/images.jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/images (5).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/images (6).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/download.jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/download (1).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/download (2).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/download (3).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/images (1).jpeg' %}" width="200" height="200"/>
+        <img src="{% static 'images/images (6).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/images (5).jpeg' %}" width="200" height="200"/>
+		<img src="{% static 'images/images.jpeg' %}" width="200" height="200"/>
+	</marquee>
+
+    <!-- details section -->
+
+
+  <!-- shop section -->
+      <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Products
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{% static 'images/download (9).jpeg' %}" alt="loading">
+              </div>
+              <div class="detail-box">
+                <div class="overlay">Chocolate tower is made with same or different kinds of chocolate.it can be done 1,2,3 layers.its price starts from 400 indian rupee.</div>
+                <h6>
+                  Chocolate Tower
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    Starting from Rs 400
+                  </span>
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{% static 'images/images (10).jpeg' %}" alt="loading">
+              </div>
+              <div class="detail-box">
+                <div class="overlay">Chocolate tower is made with same or different kinds of chocolate.it can be done 1,2,3 layers.its price starts from 400 indian rupee.</div>
+                <h6>
+                  Explosion Box
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    Starting from Rs 600
+                  </span>
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{% static 'images/download (10).jpeg' %}" alt="loading">
+              </div>
+              <div class="detail-box">
+                <div class="overlay">Chocolate tower is made with same or different kinds of chocolate.it can be done 1,2,3 layers.its price starts from 400 indian rupee.</div>
+                <h6>
+                  Shirt Hamper
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    Starting from Rs 800
+                  </span>
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{% static 'images/images (11).jpeg' %}" alt="loading">
+              </div>
+              <div class="detail-box">
+                <div class="overlay">Chocolate tower is made with same or different kinds of chocolate.it can be done 1,2,3 layers.its price starts from 400 indian rupee.</div>
+                <h6>
+                  Chocolate Bouquet
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    Starting from Rs 400
+                  </span>
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+
+  <section class="gift_section layout_padding-bottom">
+    <div class="box ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="img_container">
+              <div class="img-box">
+                <img src="{% static 'images/micheile-henderson-XuQt6lej0Tc-unsplash.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Gifts for your <br>
+                  loved ones
+                </h2>
+              </div>
+              <p>
+                  Handmade gifts are special because they are created with love and creativity, bringing a unique touch to any special occasion.Crafting a thoughtful handmade gift is like painting a picture of love that can never be replicated by anyone else.A handmade gift is not just an object, it is a reflection of the time, effort, and thoughts you put into it.
+              </p>
+              <div class="btn-box">
+                <a href="booking.html" class="btn1">
+                  Buy Now
+                </a>
+                <a href="#" class="btn2">
+                  For more info....
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end gift section -->
+
+
+  <!-- contact section -->
+
+
+
+
+  <!-- info section -->
+
+  <section class="info_section  layout_padding2-top">
+    <div class="social_container">
+      <div class="social_box">
+        <a href="https://www.instagram.com/naahal_art_gallery">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://youtube.com/@nehala_sunil_ameerjan?si=Pl5UBYa9SHnmRyFZ">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="info_container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              ABOUT US
+            </h6>
+            <p>
+              hai!! I am Nehala S, Welcome to my official webpage.This is my small business.I love creating handmade gifts because they allow me to express myself and bring joy to someone else life. We provide Customised gifts. All kerala shipping also provided.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_form ">
+              <h5>
+                Newsletter
+              </h5>
+              <form action="#">
+                <input type="email" placeholder="Enter your email">
+                <button>
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              NEED HELP
+            </h6>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              CONTACT US
+            </h6>
+            <div class="info_link-box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span> Pallimukku,Kollam </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+91 9496782074</span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>nehalas2000@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer class=" footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://www.instagram.com/naahal_art_gallery">Naahal </a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+  </section>
+
+  <!-- end info section -->
+
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}">
+  </script>
+  <script src="{% static 'js/custom.js' %}"></script>
+   </div>
+</body>
+
+</html>
